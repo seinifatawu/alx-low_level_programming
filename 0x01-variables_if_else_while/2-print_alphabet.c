@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 /**
  * main - entry of main code
  * Return: 0
