@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include <unistd.h>
 /**
  * main - entry of main code
@@ -8,11 +5,13 @@
  */
 int main(void)
 {
-	int ch;
+	char c;
 
-	for (ch = 'a'; ch <= 'Z'; ch++)
+	c = 'a';
+	while (c <= 'z')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
