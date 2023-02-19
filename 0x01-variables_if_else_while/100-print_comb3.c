@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point of code
+ * main - entry point
  * Return: 0
  */
 int main(void)
