@@ -6,26 +6,18 @@
  */
 int main(void)
 {
-	int c, i;
+	int a, b;
 
-	for (c = '0'; i <= '9'; c++)
+	for (a = 0; a < 10; a++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (b = a + 1; b < 10; b++)
 		{
-			if (c < i)
-			{
-				putchar(c);
-				putchar(i);
-				if  (c != '8' || (c == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar('0' + a);
+			putchar('0' + b);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
 	return (0);
 }
-
-
