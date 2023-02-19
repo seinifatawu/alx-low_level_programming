@@ -5,19 +5,19 @@
  */
 int main(void)
 {
-int a, b;
+int i, j;
 
-for (a = 0; a < 10; a++)
+for (i = 0; i <= 9; i++)
 {
-for (b = a + 1; b < 10; b++)
+for (j = i + 1; j <= 9; j++)
 {
-putchar('0' + a);
-putchar('0' + b);
-if (a + b != 17)
+putchar(i + '0');
+putchar(j + '0');
+if (i + j != 17)
 {
-putchar(',');
+	putchar(',');
 }
-putchar(' ');
+	putchar(' ');
 }
 }
 putchar('\n');
