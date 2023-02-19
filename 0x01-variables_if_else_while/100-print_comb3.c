@@ -10,16 +10,16 @@ int main(void)
 
 	for (a = 0; a < 10; a++)
 	{
-		for (b = a + 1; b < 10; b++)
+	for (b = a + 1; b < 10; b++)
+	{
+		putchar('0' + a);
+		putchar('0' + b);
+		if (a + b != 17)
 		{
-			putchar('0' + a);
-			putchar('0' + b);
-			if (a + b != 17)
-			{
-			putchar(',');
-			}
-			putchar(' ');
+		putchar(',');
 		}
+		putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
