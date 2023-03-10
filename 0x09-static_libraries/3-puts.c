@@ -3,6 +3,7 @@ void _puts(char *str)
 #include<stdio.h>
 /**
  * main - Entry point
+ *  _puts - c code
  *
  * Return: Always 0 (Success)
  */
