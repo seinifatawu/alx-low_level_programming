@@ -21,51 +21,46 @@ len = 0;
 f = 0;
 digit = 0;
 
-	while (s[len] != '\0')
+while (s[len] != '\0')
+len++;
 
-		len++;
+while (i < len && f == 0)
 
-	while (i < len && f == 0)
+{
+if (s[i] == '-')
+++d;
 
-	{
+if (s[i] >= '0' && s[i] <= '9')
 
-		if (s[i] == '-')
+{
 
-			++d;
+digit = s[i] - '0';
 
-		if (s[i] >= '0' && s[i] <= '9')
+if (d % 2)
 
-		{
+digit = -digit;
 
-			digit = s[i] - '0';
+n = n * 10 + digit;
+f = 1;
 
-			if (d % 2)
+if (s[i + 1] < '0' || s[i + 1] > '9')
 
-				digit = -digit;
+break;
 
-			n = n * 10 + digit;
+f = 0;
 
-			f = 1;
-
-			if (s[i + 1] < '0' || s[i + 1] > '9')
-
-				break;
-
-			f = 0;
-
-		}
-
-		i++;
-
-	}
-
-	if (f == 0)
-
-		return (0);
-
-	return (n);
 }
 
+i++;
+
+}
+
+if (f == 0)
+
+return (0);
+
+return (n);
+}
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
@@ -77,24 +72,20 @@ digit = 0;
 int main(int argc, char *argv[])
 
 {
+int result, num1, num2;
 
-	int result, num1, num2;
+if (argc < 3 || argc > 3)
 
-	if (argc < 3 || argc > 3)
+{
+printf("Error\n");
 
-	{
-		printf("Error\n");
+return (1);
+}
 
-		return (1);
-	}
+num1 = _atoi(argv[1]);
+num2 = _atoi(argv[2]);
+result = num1 * num2;
+printf("%d\n", result);
 
-	num1 = _atoi(argv[1]);
-
-	num2 = _atoi(argv[2]);
-
-	result = num1 * num2;
-
-	printf("%d\n", result);
-
-	return (0);
+return (0);
 }
