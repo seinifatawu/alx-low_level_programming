@@ -9,7 +9,7 @@
 	 * @owner: Third member
 	 *
 	 * Description: Longer description
-	 */
+	 **/
 	struct dog
 	{
 		char *name;
