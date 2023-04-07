@@ -2,6 +2,9 @@
 
 /*
  * create_file - Creates a file
+ * @filename: a pointer to the name.
+ * @text_content: a pointer to the string.
+ *
  * Return: if function fails - -1.
  *  otherwise -1.
  */
